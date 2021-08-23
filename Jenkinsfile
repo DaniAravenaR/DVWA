@@ -12,7 +12,7 @@ node ('slave_aws') {
     }
     stage('Analisis de Codigo con Sonar') {
 //        sh '$sonar_slave/sonar-scanner -Dsonar.projectKey=TestSonarQubeDani -Dsonar.source=. -D sonar.login=16fff8c574f734aba7df3f5c8728d1e1a50c83af -Dproject.settings=./sonar-project.properties'
-        /var/jenkins_home/sonar-scanner-4.6.0.2311-linux/bin/sonar-scanner -Dsonar.projectKey=TestSonarQubeDani -Dsonar.source=. -Dsonar.login=16fff8c574f734aba7df3f5c8728d1e1a50c83af -Dproject.settings=./sonar-project.properties
+//        /var/jenkins_home/sonar-scanner-4.6.0.2311-linux/bin/sonar-scanner -Dsonar.projectKey=TestSonarQubeDani -Dsonar.source=. -Dsonar.login=16fff8c574f734aba7df3f5c8728d1e1a50c83af -Dproject.settings=./sonar-project.properties
     }
     stage('Deploy sobre EC2') {
         sh 'docker ps'
