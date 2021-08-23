@@ -11,7 +11,7 @@ node ('slave_aws') {
         sh 'echo "Tests passed Hola mundo"'
     }
     stage('Analisis de Codigo con Sonar') {
-//        sh '$sonar_slave/sonar-scanner -Dsonar.projectKey=CAMILA -Dsonar.source=. -D sonar.login=ccfc56a1958421dcd3580fd1733942d1b66546c4 -Dproject.settings=./sonar-project.properties'
+//        sh '$sonar_slave/sonar-scanner -Dsonar.projectKey=TestSonarQubeDani -Dsonar.source=. -D sonar.login=16fff8c574f734aba7df3f5c8728d1e1a50c83af -Dproject.settings=./sonar-project.properties'
     }
     stage('Deploy sobre EC2') {
         sh 'docker ps'
