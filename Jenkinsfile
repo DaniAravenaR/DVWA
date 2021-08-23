@@ -1,7 +1,7 @@
 node ('slave_aws') {
     stage('Clonacion Repositorio') {
         git branch: 'master',
-            credentialsId: 'githubssh',
+            credentialsId: 'gitHubssh',
             url: 'git@github.com:DaniAravenaR/DVWA.git'
 
         sh "ls -lat"
